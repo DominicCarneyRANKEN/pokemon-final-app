@@ -1,8 +1,8 @@
 {
+  "homepage": "https://DominicCarneyRANKEN/github.io/pokemonFINALapp",
   "name": "pokemon-final-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://DominicCarmeyRANKEN.github.io/pokemon-final-app",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

@@ -35,7 +35,7 @@ const Student = (props) => {
   <li className='list-group-item text-center'>{props.student.email}</li>
   <li className='list-group-item text-center'>{props.student.gradYear}</li>
     <button type='button' className='btn btn-danger' onClick={() => props.removeStudent(props.student)}>Delete Pokemon <FontAwesomeIcon icon={faWarning}></FontAwesomeIcon></button>
-    <button type='button' className='btn btn-warning'onClick={() => setEditMode(true)}>Edit Student <FontAwesomeIcon icon={faEdit}></FontAwesomeIcon></button>
+    <button type='button' className='btn btn-dark'onClick={() => setEditMode(true)}>Edit Pokemon <FontAwesomeIcon icon={faEdit}></FontAwesomeIcon></button>
 </ul>
 }
 {editMode && 

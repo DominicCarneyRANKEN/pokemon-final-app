@@ -82,85 +82,85 @@ function App() {
 
   const students =[{ 
     id: nanoid(),
-    firstName: "Claude",
-    lastName: "Cartan",
-    email: "ccartan0@hud.gov",
-    image: "images/student1.jpg",
+    firstName: "Dewott",
+    lastName: "Water Type",
+    email: "Unova Region",
+    image: "images/dewott.jpg",
     gradYear: 6
 }, {
 
   id: nanoid(),
-  firstName: "Loise",
-  lastName: "Isson",
-  email: "lisson1@fda.gov",
-    image: "images/student2.jpg",
-    gradYear: 6
+  firstName: "Darkrai",
+  lastName: "Dark Type",
+  email: "Sinnoh Region",
+    image: "images/darkrai.jpg",
+    gradYear: 4
 }, {
 
 
 
   id: nanoid(),
-  firstName: "Flore",
-  lastName: "Marden",
-  email: "fmarden2@businesswire.com",
-    image: "images/student3.jpg",
+  firstName: "MEGA Blaziken",
+  lastName: "Fire Type",
+  email: "Kalos Region",
+    image: "images/blaziken.jpg",
     gradYear: 6
 }, {
 
   id: nanoid(),
-  firstName: "Culley",
-  lastName: "Carnall",
-  email: "ccarnall3@icq.com",
-    image: "images/student4.jpg",
+  firstName: "Liligant",
+  lastName: "Grass Type",
+  email: "Hisui Region",
+    image: "images/lilligant.jpg",
+    gradYear: 5
+}, {
+
+  id: nanoid(),
+  firstName: "Zeraora",
+  lastName: "Electric Type",
+  email: "Alola Region",
+    image: "images/zeraora.jpg",
+    gradYear: 7
+}, {
+
+  id: nanoid(),
+  firstName: "Yveltal",
+  lastName: "Legend Dark & Flying Type",
+  email: "Kalos Region",
+    image: "images/yveltal.jpg",
     gradYear: 6
 }, {
 
   id: nanoid(),
-  firstName: "Tobey",
-  lastName: "Petersen",
-  email: "tpetersen4@apple.com",
-    image: "images/student5.jpg",
+  firstName: "Mega Medicham",
+  lastName: "Fighting & Psychic Type",
+  email: "Hoenn Region",
+    image: "images/medicham-mega.jpg",
     gradYear: 6
 }, {
 
   id: nanoid(),
-  firstName: "Nevsa",
-  lastName: "MacMickan",
-  email: "nmacmickan5@elpais.com",
-    image: "images/student6.jpg",
+  firstName: "Tinkatuff",
+  lastName: "Fairy & Steel Type",
+  email: "Paldea Region ",
+    image: "images/tinkatuff.jpg",
     gradYear: 6
 }, {
 
   id: nanoid(),
-  firstName: "Avictor",
-  lastName: "Sawyer",
-  email: "asawyer6@networkadvertising.org",
-    image: "images/student7.jpg",
-    gradYear: 6
+  firstName: "Empoleon",
+  lastName: "Water & Steel Type",
+  email: "Sinnoh Region",
+    image: "images/empoleon.jpg",
+    gradYear: 4
 }, {
 
   id: nanoid(),
-  firstName: "Imelda",
-  lastName: "Balogun",
-  email: "ibalogun7@hatena.ne.jp",
-    image: "images/student8.jpg",
-    gradYear: 6
-}, {
-
-  id: nanoid(),
-  firstName: "Ricardo",
-  lastName: "Cabrales",
-  email: "rcabrales8@hubpages.com",
-    image: "images/student9.jpg",
-    gradYear: 6
-}, {
-
-  id: nanoid(),
-  firstName: "Amii",
-  lastName: "Cumpsty",
-  email: "acumpsty9@ihg.com",
-    image: "images/student10.jpg",
-    gradYear: 6
+  firstName: "Sudowoodo",
+  lastName: "Rock Type",
+  email: "Johto Region",
+    image: "images/sudowoodo.jpg",
+    gradYear: 2
   }]
 
   
@@ -181,12 +181,12 @@ function App() {
       {<AddStudent addStudent={addStudent}/>}
       < div className='row mt-4'>
       <div className= 'col-md-4'>
-        <label htmlFor='txtKeywords'>Search by first or last</label>
-        <input type='text' className='form-control' placeholder='Search First or Last Name' onChange={ e => setKeywords(e.currentTarget.value)} value={keywords}/>
+        <label htmlFor='txtKeywords'>Search By Pokemon Or Type</label>
+        <input type='text' className='form-control' placeholder='Search Pokemon Or Type' onChange={ e => setKeywords(e.currentTarget.value)} value={keywords}/>
       </div>
       <div className='col-md-4'>
         <select className='form-select' value={gradYear} onChange={evt => setGradYear(evt.currentTarget.value)}>
-          <option value=''>Select Year</option>
+          <option value=''>Select By Generation</option>
           {_.chain(allStudents)
             .map((student) => student.gradYear)
             .sort()
@@ -200,7 +200,7 @@ function App() {
         </select>
       </div>
       <div className='col-md-4'>
-        <button type='button' className='btn btn-primary' onClick={searchStudents}>Search Students <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></button>
+        <button type='button' className='btn btn-primary' onClick={searchStudents}>Search Pokemons <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></button>
       </div>
       </div>
     </div>
